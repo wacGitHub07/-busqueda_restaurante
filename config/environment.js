@@ -42,5 +42,10 @@ module.exports = function(environment) {
 
   }
 
+  ENV.contentSecurityPolicy = {
+    // ... other stuff here
+    'connect-src': "'self' https://restaurant-node.herokuapp.com"
+  }
+
   return ENV;
 };
